@@ -1,15 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.14'
-# supply to  travis
-gem 'sqlite3'
+ruby '1.9.3'
+gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  #gem 'sqlite3'
+  gem 'sqlite3'
   gem 'ruby-debug19'
 end
 
