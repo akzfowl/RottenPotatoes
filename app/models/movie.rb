@@ -1,3 +1,10 @@
 class Movie < ActiveRecord::Base
-  attr_accessible :title, :rating, :description, :release_date
+
+  class << self
+    def all_ratings
+      self.find(:all, select: :rating).map(&:rating).uniq.sort
+    end
+  end
+
 end
+

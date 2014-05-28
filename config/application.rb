@@ -50,11 +50,5 @@ module Rottenpotatoes
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
-    # Assume all model attributes are safe by default
-    config.active_record.whitelist_attributes = true
-    
-    #Prevent failure on Heroku assets precompile
-    config.assets.initialize_on_precompile = false
   end
 end
